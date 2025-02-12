@@ -1,0 +1,229 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  height: 100vh;
+  background-color: #13819f;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.register-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-groupTC {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content */
+  margin: 20px 0; /* Add some spacing around the section */
+}
+
+.input-groupTC label {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Adjust font size for readability */
+  color: #333; /* Neutral text color */
+  cursor: pointer; /* Make it look clickable */
+}
+
+.input-groupTC input[type='checkbox'] {
+  margin-right: 10px; /* Space between the checkbox and text */
+  transform: scale(
+    1.2
+  ); /* Slightly enlarge the checkbox for better visibility */
+  cursor: pointer;
+  accent-color: #007bff; /* Use a consistent theme color */
+}
+
+.input-groupTC label:hover {
+  color: #0056b3; /* Add a subtle hover effect on text */
+}
+
+.input-groupTC label:focus-within {
+  outline: 2px solid #007bff; /* Outline for accessibility focus */
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 40%;
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  cursor: pointer;
+  pointer-events: auto; /* Ensure it is clickable */
+  color: #666;
+  font-size: 1.2em;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-button,
+.register-button {
+  width: 50% !important;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #42c0bc;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.terms-button {
+  width: 100% !important;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #42c0bc;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.register-button {
+  width: 50% !important;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.button-checked {
+  background-color: #42c0bc;
+}
+
+.error-message {
+  color: red;
+  font-size: 2em;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.button-unchecked {
+  background-color: #f44336;
+}
+
+@media (max-width: 480px) {
+  .register-title {
+    font-size: 1.5rem;
+  }
+
+  .register-form {
+    width: 100%;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .login-button,
+  .register-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .register-title {
+    font-size: 1.8rem;
+  }
+
+  .register-form {
+    width: 80%;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .login-button,
+  .register-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Desktop (769px and above) */
+@media (min-width: 769px) {
+  .register-title {
+    font-size: 2rem;
+  }
+
+  .register-form {
+    width: 400px;
+  }
+
+  .input-group input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .login-button,
+  .register-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 300px;
+  padding-left: 15px;
+}

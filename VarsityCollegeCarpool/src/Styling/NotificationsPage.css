@@ -1,0 +1,203 @@
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  height: 100vh;
+  background-color: #2f7891;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.notificationCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  border-bottom: 2px solid #000;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+}
+
+.notificationCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.notificationContent {
+  flex-grow: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notificationType {
+  font-size: 1.2rem;
+  color: #2f7891;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.senderName {
+  font-size: 1rem;
+  color: #333;
+}
+
+.message {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+  text-overflow: ellipsis;
+}
+
+.notificationCard:last-child {
+  border-bottom: none;
+}
+
+.notification-table {
+  width: 100%;
+  max-width: 90%;
+  border: 2px solid #000;
+  border-radius: 15px;
+  background-color: #d9e076;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.notificationList {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.notificationList::-webkit-scrollbar {
+  display: none;
+}
+
+.declineButton {
+  background-color: #e74c3c;
+  color: #fff;
+  border: 2px solid #981c0e;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.declineButton:hover {
+  background-color: #c0392b;
+}
+
+.acceptButton {
+  background-color: #32cd32;
+  color: #fff;
+  border: 2px solid #257525;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.acceptButton:hover {
+  background-color: #28a428;
+}
+
+.notifications-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+@media (max-width: 600px) {
+  .notifications-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .notificationCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .acceptButton,
+  .declineButton {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .notificationList {
+    padding: 10px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}

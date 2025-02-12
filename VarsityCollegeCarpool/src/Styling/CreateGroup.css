@@ -1,0 +1,178 @@
+.create-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #13819f;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.create-group-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.create-group-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: white;
+}
+
+.input-group input,
+.input-group select {
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.upload-button {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.upload-file {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.create-button,
+.cancel-button {
+  width: 48%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.create-button {
+  background-color: #42c0bc;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .create-group-title {
+    font-size: 1.5rem;
+  }
+
+  .create-group-form {
+    width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .create-button,
+  .cancel-button {
+    width: 100%;
+  }
+
+  .upload-button img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-group-title {
+    font-size: 1.2rem;
+  }
+
+  .create-button,
+  .cancel-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .upload-button img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.open-nav-button {
+  background-color: #42c0bc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.view-group-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #2f7891;
+  padding: 20px;
+  box-sizing: border-box;
+}
